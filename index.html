@@ -2,15 +2,15 @@
 <html>
 <head>
 	<title>PIANO</title>
-	<script src="./app/jquery-1.10.2.min.js"></script>
-	<script src="./app/modernizr.custom.js"></script>
-	<script src='./app/soundmanager2.min.js'></script>
-	<link rel="stylesheet" type="text/css" href="./app/piano.css">
+	<script src="jquery-1.10.2.min.js"></script>
+	<script src="modernizr.custom.js"></script>
+	<script src='soundmanager2.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="piano.css">
 </head>
 <body>
 	<noscript>
-		Please enable javascript for this page to work
-	</noscript> 
+		请启动浏览器的JavaScript支持
+	</noscript>
 	<div id="container">
 		<div id="C"></div>
 		<div id="D"></div>
@@ -22,13 +22,13 @@
 		</div>
 	</div>
 	<div id="loading">
-		<div id="loadingText">Loading...</div>
+		<div id="loadingText">加载中，请稍后</div>
 	</div>
 	<script type="text/javascript">
-		document.querySelector('#container').addEventListener('click', function() {
-			window.soundContext.resume().then(() => {
-			});
-		});
+		// document.querySelector('#container').addEventListener('click', function() {
+		// 	window.soundContext.resume().then(() => {
+		// 	});
+		// });
 		var KEYMAP = {
 			"C" : {
 				audio : "piano/c4",
@@ -62,6 +62,6 @@
 			}
 		};
 	</script>
-	<script src="./app/Inst.js"></script>
+	<script src="Inst.js"></script>
 </body>
 </html>

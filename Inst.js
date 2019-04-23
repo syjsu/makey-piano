@@ -51,7 +51,7 @@ var INST = function(){
 	}
 
 	function allLoaded(){
-		$("#loadingText").html("Click here to play");
+		$("#loadingText").html("点击屏幕开始弹奏");
 		var $loading = $("#loading");
 		$loading.css("cursor", "pointer");
 		$loading.one("click", hideClickHere);
@@ -109,7 +109,7 @@ INST.KEY.prototype.startNote = function(){
 
 //called when the sound is done playing
 INST.KEY.prototype.endNote = function(){
-	// this.dom.endNote();	
+	// this.dom.endNote();
 }
 
 /*
@@ -186,5 +186,5 @@ INST.DOM.prototype.startNote = function(){
 
 //called when the sound is done playing
 INST.DOM.prototype.endNote = function(){
-	this.$img.css("opacity", 0);	
+	this.$img.css("opacity", 0);
 }

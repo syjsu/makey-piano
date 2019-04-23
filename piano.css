@@ -30,12 +30,15 @@ noscript {
 	position: relative;
 	width: 196px;
 	height: 92px;
+	background-color: #ccc;
 	margin : 4px;
 	z-index: 100;
 }
 
 #titlebar a img{
 	position: relative;
+	width: 181px;
+	height: 80px;
 	margin: 7px;
 }
 

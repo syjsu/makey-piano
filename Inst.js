@@ -2,8 +2,8 @@
 Modernizr.load({
 	test: Modernizr.webaudio,
 	// test : false,
-	yep : '../instScripts/app/WebAudioNote.js',
-	nope: '../instScripts/app/SMNote.js',
+	yep : './instScripts/app/WebAudioNote.js',
+	nope: './instScripts/app/SMNote.js',
 	complete : function () {
 		if (INST && INST.AUDIO){
 			//initialize the sound
@@ -121,7 +121,7 @@ INST.DOM = function(key){
 	this.$el = $("#"+key.id);
 	//load the image and put it in the element
 	var img = new Image();
-	img.src = "../instAssets/images/"+KEYMAP[key.id].image+".png";
+	img.src = "./instAssets/images/"+KEYMAP[key.id].image+".png";
 	img.onload = $.proxy(this.imageLoaded, this);
 	this.$img = $(img);
 	//boolean value if the key is currently down to prevent multiple keyclicks while down

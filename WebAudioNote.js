@@ -43,11 +43,11 @@ INST.PLAYER = function(key){
 	this.key = key;
 	var audioFile = KEYMAP[key.id].audio;
 	if (INST.AUDIO.canPlayMP3()) {
-		var url = './instAssets/audio/'+audioFile+".mp3";
+		var url = 'instAssets/audio/'+audioFile+".mp3";
 	} else if (INST.AUDIO.canPlayOGG()){
-		var url = './instAssets/audio/'+audioFile+".ogg";
+		var url = 'instAssets/audio/'+audioFile+".ogg";
 	} else {
-		var url = './instAssets/audio/'+audioFile+".wav";
+		var url = 'instAssets/audio/'+audioFile+".wav";
 	}
 	INST.AUDIO.createXHR(url, $.proxy(this.bufferLoaded, this));
 }
